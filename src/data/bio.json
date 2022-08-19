@@ -1,0 +1,21 @@
+{
+    "heading": ["About the", "notes"],
+    "copy": "Welcome! These pages will walk you through everything you need to get up and running in Immersive Web.",
+    "aboutCopy": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "trainees": {
+        "heading": "Who are the trainees?",
+        "copy": "Lorem ipsum 3 of us, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.",
+        "people": [
+            {
+                "name": "Ksawery Karczewski",
+                "img": "/assets/img/ksawery.jpg",
+                "copy": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "link": "https://www.wikipedia.org/"
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+.page {
+    padding-top: rem($smallPaddingTop);
+}
+
+.container {
+    padding: 0 rem($smallPadding);
+}
+
+@include mq-regular {
+    .container {
+        padding: 0 rem($xlargePadding);
+    }
+
+    .page {
+        padding-top: rem($largePaddingTop);
+    }
+}

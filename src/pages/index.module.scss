@@ -1,0 +1,142 @@
+.page {
+    padding-top: rem($smallPaddingTop);
+}
+
+.container {
+    padding: 0 rem($smallPadding);
+}
+
+.highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(12px);
+    margin-bottom: rem(15px);
+}
+
+.canvas {
+    max-width: rem(686px);
+
+    margin-bottom: rem(66px);
+}
+
+.about {
+    margin-bottom: rem(65px);
+}
+
+.marqueeContainer {
+    position: relative;
+    padding-bottom: rem(50px);
+
+    &::before {
+        content: '';
+        height: rem(15px);
+        width: 100%;
+        background-color: $colorArcticLime;
+        position: absolute;
+        top: rem(-13px);
+    }
+    &::after {
+        content: '';
+        height: rem(15px);
+        width: 100%;
+        background-color: $colorArcticLime;
+        position: absolute;
+    }
+}
+
+.marquee {
+    background-color: $colorArcticLime;
+    height: rem(22px);
+
+    :global(.marquee) {
+        font-weight: 400;
+        height: rem(22px);
+        align-items: baseline;
+    }
+
+    .marqueeText {
+        padding-right: rem(22px);
+    }
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(143px);
+
+    font-size: rem(22px);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $colorBlack;
+}
+
+.postsLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+:global(.inactive).posts {
+    opacity: 0.5;
+}
+
+@include mq-regular {
+    .container {
+        padding: 0 rem($xlargePadding);
+    }
+
+    .page {
+        padding-top: rem($largePaddingTop);
+    }
+
+    .canvas {
+        position: absolute;
+        margin-bottom: rem(24px);
+        max-width: rem(586px);
+        height: rem(586px);
+        right: rem($xlargePadding);
+        top: rem(169px);
+    }
+
+    .highlight {
+        align-items: baseline;
+        gap: rem(22px);
+    }
+
+    .header {
+        margin-bottom: rem(550px);
+
+        max-width: rem(485px);
+    }
+
+    .about {
+        margin-bottom: rem(190px);
+    }
+
+    .marqueeWrapper {
+        padding-bottom: rem(190px);
+    }
+
+    .marqueeContainer {
+        &::before {
+            height: rem(20px);
+            top: rem(-10px);
+        }
+
+        &::after {
+            height: rem(20px);
+        }
+    }
+
+    .marquee {
+        height: rem(44px);
+
+        :global(.marquee) {
+            height: rem(44px);
+        }
+
+        .marqueeText {
+            padding-right: rem(44px);
+        }
+    }
+}

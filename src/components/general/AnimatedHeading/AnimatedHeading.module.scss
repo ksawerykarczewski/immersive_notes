@@ -1,0 +1,19 @@
+.heading {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: rem(15px);
+
+    font-size: rem(22px);
+    font-weight: 400;
+}
+
+@include mq-regular {
+    .heading {
+        margin-bottom: rem(42px);
+
+        font-size: rem(44px);
+        font-weight: 400;
+    }
+}

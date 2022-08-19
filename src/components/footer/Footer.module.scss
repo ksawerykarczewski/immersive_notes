@@ -1,0 +1,175 @@
+.footer {
+    position: relative;
+    height: rem(437px);
+    width: 100%;
+    background-color: $colorArcticLime;
+
+    padding: 0 rem($smallPadding);
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: rem(106px);
+}
+
+.link {
+    text-decoration: none;
+    color: $colorBlack;
+}
+
+.mail {
+    position: relative;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: rem(121px);
+}
+
+.copy > p {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: rem(-2px);
+        background-color: black;
+        height: rem(2px);
+    }
+}
+.span {
+    color: red;
+}
+
+.note {
+    position: absolute;
+    bottom: 0;
+    background: $colorBlack;
+    color: $colorWhite;
+    left: 0;
+    margin: 0 rem(35px) rem(75px);
+    padding: rem(19px);
+
+    text-align: justify;
+}
+
+.noteText {
+    line-height: 140%;
+}
+
+.close {
+    position: absolute;
+    top: rem(13px);
+    right: rem(13px);
+
+    width: rem(30px);
+    height: rem(30px);
+}
+
+@include mq-regular {
+    .footer {
+        padding: 0 rem($largePadding);
+    }
+
+    .social {
+        display: flex;
+        justify-content: flex-start;
+
+        padding: rem(59px) 0 0;
+        margin: 0;
+        gap: rem(67px);
+    }
+
+    .mail {
+        position: absolute;
+        top: rem(59px);
+        right: rem($largePadding);
+    }
+
+    .copy {
+        padding-top: rem(295px);
+    }
+
+    .note {
+        max-width: rem(442px);
+        height: fit-content;
+
+        margin-left: rem($largePadding);
+        padding-bottom: rem($largePadding);
+    }
+
+    .close {
+        top: rem(22px);
+        right: rem(22px);
+    }
+
+    .heading {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+
+    .heading::before,
+    .heading::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+
+    .heading::before {
+        background-color: $colorBlack;
+        height: rem(3px);
+        bottom: 0;
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .heading::after {
+        content: attr(data-replace);
+        height: 100%;
+        top: 0;
+        transform-origin: 100% 50%;
+        transform: translate3d(200%, 0, 0);
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .footer {
+        &:hover {
+            .heading::before {
+                transform-origin: 0% 50%;
+                transform: scaleX(1);
+            }
+
+            .heading::after {
+                transform: translate3d(0, 0, 0);
+            }
+
+            .replace {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+    }
+    .heading span {
+        display: inline-block;
+        transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .heading:hover span {
+        transform: translate3d(-100%, 0, 0);
+    }
+}

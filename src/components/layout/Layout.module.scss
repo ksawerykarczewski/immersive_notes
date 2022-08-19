@@ -1,0 +1,22 @@
+.layout main,
+.layout header,
+.layout header a {
+    transition: $easeInOutAllColor;
+}
+
+:global(.is-inverted).layout main {
+    color: $colorWhite;
+    background-color: $colorBlack;
+    transition: $easeInOutAllColor;
+}
+
+:global(.is-inverted).layout header {
+    color: $colorWhite;
+    background-color: $colorBlack;
+    transition: $easeInOutAllColor;
+}
+
+:global(.is-inverted).layout header a {
+    color: $colorWhite;
+    transition: $easeInOutAllColor;
+}

@@ -1,0 +1,167 @@
+.page {
+    padding-top: rem($smallPaddingTop);
+}
+
+.container {
+    padding: 0 rem($smallPadding);
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: rem(22px);
+    font-weight: 400;
+}
+
+.list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.thumbnail {
+    margin-top: rem(21px);
+}
+
+.subheading {
+    font-weight: 600;
+    padding: 0 0 rem(26px);
+}
+
+.item {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $colorPhilippineSilver;
+    font-size: rem(16px);
+
+    padding-bottom: rem(14px);
+
+    &:last-of-type {
+        padding: 0;
+    }
+}
+
+.wrapper {
+    position: relative;
+    margin-bottom: rem(57px);
+}
+
+.authorContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: rem(80px);
+    height: rem(30px);
+
+    background-color: $colorLimeGreen;
+}
+
+.author {
+    font-family: $ibmp-plex-mono;
+    font-size: rem(16px);
+}
+
+.content {
+    margin-bottom: rem(85px);
+
+    .paragraph {
+        margin-bottom: rem(26px);
+        line-height: 140%;
+    }
+
+    .image {
+        margin-bottom: rem(26px);
+    }
+}
+
+@include mq-regular {
+    .container {
+        padding: 0 rem($xlargePadding);
+    }
+
+    .page {
+        padding-top: rem($largePaddingTop);
+    }
+
+    .heading {
+        position: relative;
+        height: rem(484px);
+        margin-bottom: rem(117px);
+        font-size: rem(44px);
+        font-weight: 400;
+    }
+
+    .heading h2 {
+        max-width: rem(728px);
+    }
+
+    .thumbnail {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        max-width: rem(484px);
+    }
+
+    .wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .list {
+        margin: 0;
+        font-size: rem(20px);
+    }
+
+    .item {
+        padding-bottom: rem(18px);
+        // color: red;
+
+        &:last-of-type {
+            padding: 0;
+        }
+    }
+
+    .authorContainer {
+        width: rem(100px);
+        height: rem(35px);
+
+        left: 0;
+        top: rem(-120px);
+    }
+
+    .author {
+        font-size: rem(20px);
+    }
+
+    .content {
+        margin-bottom: rem(235px);
+
+        .paragraph {
+            font-size: rem(20px);
+            margin-bottom: rem(35px);
+        }
+
+        .image {
+            width: 100%;
+            display: flex !important;
+            justify-content: center !important;
+
+            margin: rem(117px) 0;
+
+            img {
+                max-width: rem(665px) !important;
+            }
+        }
+    }
+
+    .subheading {
+        font-size: rem(20px);
+        padding: 0 0 rem(35px);
+    }
+}

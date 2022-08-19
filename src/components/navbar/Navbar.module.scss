@@ -1,0 +1,27 @@
+.container {
+    mix-blend-mode: difference;
+    position: fixed;
+    width: 100%;
+
+    z-index: 100 !important;
+    pointer-events: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: rem(18px) rem($smallPadding) rem(50px);
+
+    a {
+        color: $colorWhite;
+        pointer-events: initial;
+    }
+}
+
+@include mq-regular {
+    .navigation {
+        padding: rem(24px) rem($largePadding) rem(117px);
+    }
+}

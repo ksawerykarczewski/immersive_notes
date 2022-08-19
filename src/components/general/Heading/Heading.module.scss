@@ -1,0 +1,65 @@
+.heading {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+// :global(.is-inverted) * {
+//     color: red;
+// }
+
+:global(.is-h1).heading {
+    margin-bottom: rem(15px);
+
+    font-size: rem(22px);
+    font-weight: 400;
+}
+
+:global(.is-h2).heading {
+    font-size: rem(22px);
+    font-weight: 400;
+
+    margin-bottom: rem(24px);
+}
+
+:global(.is-h4).heading {
+    font-size: rem(22px);
+    font-weight: 400;
+}
+
+:global(.footerHeading).heading {
+    display: flex;
+    justify-content: center;
+    padding: rem(27px) 0 rem(35px);
+
+    font-size: rem(48px);
+}
+
+:global(.noteHeading).heading {
+    display: flex;
+    justify-content: center;
+    padding: rem(27px) 0 rem(35px);
+
+    font-size: rem(48px);
+}
+
+@include mq-regular {
+    :global(.is-h1).heading {
+        margin-bottom: rem(42px);
+
+        font-size: rem(44px);
+        font-weight: 400;
+    }
+
+    :global(.is-h2).heading {
+        font-size: rem(44px);
+        font-weight: 400;
+    }
+
+    :global(.footerHeading).heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

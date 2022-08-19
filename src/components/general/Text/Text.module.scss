@@ -1,0 +1,20 @@
+.paragraph {
+    padding: 0;
+    margin: 0;
+    line-height: 140%;
+    padding-bottom: rem(26px);
+}
+
+.text {
+    a {
+        color: $colorArcticLime;
+        text-decoration: none;
+    }
+}
+
+@include mq-regular {
+    .paragraph,
+    .text {
+        font-size: rem(20px);
+    }
+}

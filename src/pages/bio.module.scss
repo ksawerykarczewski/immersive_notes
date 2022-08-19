@@ -1,0 +1,76 @@
+.container {
+    padding: 0 rem($smallPadding);
+    padding-top: rem($smallPaddingTop);
+}
+
+.link {
+    color: $colorArcticLime;
+    text-decoration: none;
+}
+
+.icon {
+    margin: 0 auto;
+    display: block;
+    padding: rem(58px) 0;
+}
+
+.image {
+    padding: rem(26px) 0;
+}
+
+.section {
+    padding: rem(108px) 0;
+}
+
+.block + * {
+    padding: rem(58px) 0 0;
+}
+
+.sectionHeading {
+    padding: rem(58px) 0 0;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    padding: rem(58px) 0;
+}
+
+@include mq-regular {
+    .container {
+        padding: 0 rem($xlargePadding);
+    }
+
+    .page {
+        padding-top: rem($largePaddingTop);
+    }
+
+    .block + * {
+        padding: rem(196px) 0 0;
+    }
+
+    .icon {
+        padding: rem(108px) 0;
+    }
+
+    .link {
+        margin-top: rem(35px);
+        font-size: rem(20px);
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto;
+        max-width: rem(665px);
+        padding-bottom: rem(117px);
+        // width: 100%;
+        // display: flex !important;
+        // justify-content: center !important;
+
+        // margin: rem(117px) 0;
+    }
+
+    .iconWrapper {
+        padding: rem(117px) 0;
+    }
+}

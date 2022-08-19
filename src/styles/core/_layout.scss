@@ -1,0 +1,29 @@
+html,
+body {
+    @include text-rendering;
+    background-color: $colorBrightGray;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    margin: 0 auto;
+
+    font-family: $inter-regular;
+
+    color: $colorBlack;
+}
+
+html {
+    @include fluidBaseRem(375, 750, 16, 32);
+    //@include fluidBaseRem(375, 750, 8, 16);
+
+    -webkit-marquee-increment: 0vw; // fluid typo fix for safari https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
+}
+
+@include mq-regular {
+    html {
+        @include fluidBaseRem(1600, 3200, 16, 32);
+    }
+}

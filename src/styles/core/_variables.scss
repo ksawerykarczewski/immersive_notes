@@ -1,0 +1,39 @@
+$base-font-size: 16px;
+$breakpoint-narrow: 480px;
+$breakpoint-regular: 768px;
+$breakpoint-wide: 1024px;
+
+// colors
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$colorPhilippineSilver: #b5b5b5;
+$colorBrightGray: #e9ebeb;
+$colorArcticLime: #cbff0e;
+$colorLimeGreen: #34e338;
+$colorBluebonnet: #1f1def;
+$colorFluorescentBlue: #3ef9f9;
+$colorMaximumYellow: #f9f93f;
+$colorSteelPink: #e123e2;
+$colorRedLust: #e2161c;
+
+// Fonts
+$inter-regular: 'InterRegular', sans-serif;
+$ibmp-plex-mono: 'IBMPPlexMono', sans-serif;
+// $font-mono-light: 'GTPressuraMono-Light', sans-serif;
+// $font-plaak: 'Plaak-SemicondensedRegular', sans-serif;
+// $font-plaak-bold: 'Plaak-CondensedBold', sans-serif;
+
+//spacing
+$smallPadding: 16px;
+$largePadding: 56px;
+$xlargePadding: 158px;
+
+$smallPaddingTop: 90px;
+$largePaddingTop: 169px;
+
+// Eases
+$easeInOutOpacity: opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+$easeInOutTransform: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+$easeInOutStrokeWidth: stroke-width 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+$easeInOutAllColor: color 0.5s cubic-bezier(0.65, 0, 0.35, 1), background-color 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+$easeInOutAll: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
