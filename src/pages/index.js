@@ -39,9 +39,7 @@ export default function Home({ posts }) {
                     <Header firstline={data.heading[0]} secondline={data.heading[1]} copy={data.copy} />
                 </div>
             </div>
-            <Section>
                 <img className={styles.canvas} src="/assets/gifs/squares.gif" alt="canvas" width="100%" height="100%" />
-            </Section>
             <Section>
                 <div className={styles.container}>
                     <div className={styles.highlight}>

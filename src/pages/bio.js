@@ -2,25 +2,25 @@ import Heading from '../components/general/Heading/Heading';
 import Text from '../components/general/Text/Text';
 import Header from '../components/general/Header/Header';
 import ScrollIcon from '../components/general/ScrollIcon/ScrollIcon';
-import styles from './bio.module.scss';
-import data from '../data/bio.json';
 import Section from '../components/general/Section/Section';
+import styles from './bio.module.scss';
 import classNames from 'classnames';
+
+import data from '../data/bio.json';
 
 export default function Bio() {
     return (
         <div className={classNames(styles.container, styles.page)}>
-            <Section>
                 <Header firstline={data.heading[0]} secondline={data.heading[1]} copy={data.copy} />
-                {data.aboutCopy.map((paragraph, index) => {
-                    return (
-                        <Text key={index} type="paragraph">
-                            {paragraph}
-                        </Text>
-                    );
-                })}
-            </Section>
-            <Text type="richtext">{data.linkText}</Text>
+                <Section>
+                    {data.aboutCopy.map((paragraph, index) => {
+                        return (
+                            <Text key={index} type="paragraph">
+                                {paragraph}
+                            </Text>
+                        );
+                    })}
+                </Section>
             <div className={styles.section}>
                 <Section>
                     <Heading tag="h2" className={styles.sectionHeading}>

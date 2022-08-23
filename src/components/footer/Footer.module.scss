@@ -17,6 +17,11 @@
 .link {
     text-decoration: none;
     color: $colorBlack;
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.link:hover {
+    opacity: 0.5;
 }
 
 .mail {
@@ -49,9 +54,6 @@
         background-color: black;
         height: rem(2px);
     }
-}
-.span {
-    color: red;
 }
 
 .note {

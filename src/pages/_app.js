@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps, router }) {
     return (
         <>
             <Head>
-                <title>Immersive Blog</title>
+                <title>Immersive Web Notes</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-                <meta name="description" content="Immersive Blog"></meta>
+                <meta name="description" content="Immersive Web Notes"></meta>
                 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />

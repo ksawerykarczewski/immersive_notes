@@ -7,8 +7,8 @@ function Section({ children }) {
     const isInView = useInView(ref, { once: true });
 
     return (
-        <section ref={ref}>
             <motion.div
+             ref={ref}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -20,7 +20,6 @@ function Section({ children }) {
             >
                 {children}
             </motion.div>
-        </section>
     );
 }
 

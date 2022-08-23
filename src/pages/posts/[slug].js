@@ -13,6 +13,7 @@ const client = createClient({
 
 export const getStaticPaths = async () => {
     const response = await client.getEntries({ content_type: 'blogPost' });
+    console.log(response)
 
     const paths = response.items.map((item) => {
         return {
@@ -32,6 +33,9 @@ export async function getStaticProps({ params }) {
     const { items } = await client.getEntries({ content_type: 'blogPost', 'fields.slug': params.slug });
     const response = await client.getEntries({ content_type: 'blogPost' });
 
+    console.log(response)
+
+
     return {
         props: {
             blogPost: items[0],
@@ -42,6 +46,8 @@ export async function getStaticProps({ params }) {
 
 export default function PostDetails({ blogPost, posts }) {
     const { title, thumbnail, topics, author, text, slug } = blogPost.fields;
+
+    console.log(text)
     return (
         <div className={styles.page}>
             <div className={styles.container}>
@@ -91,6 +97,12 @@ export default function PostDetails({ blogPost, posts }) {
                                     <p key={index} className={styles.subheading}>
                                         {item.content[0].value}
                                     </p>
+                                );
+                            } else if (item.nodeType === 'ordered-list') {
+                                return (
+                                    <ol key={index} >
+                                        <li>{item.content[0].value}</li>
+                                    </ol>
                                 );
                             }
                         })}
